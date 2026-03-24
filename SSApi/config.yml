@@ -196,7 +196,7 @@ donation-actions:
 
     # 즉시 사망 설정
     instant-death:
-      protect-inventory: true    # true: 인벤토리 보호 (아이템 드롭 안됨), false: 인벤토리 드롭
+      protect-inventory: false    # true: 인벤토리 보호 (아이템 드롭 안됨), false: 인벤토리 드롭
       broadcast:
         message: "§c{player}§f님이 §e{donator}§f님의 §c즉시 사망§f 후원으로 인해 사망하셨습니다!"
         sound:

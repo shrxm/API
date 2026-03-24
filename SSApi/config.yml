@@ -157,7 +157,7 @@ donation-actions:
     # 랜덤 버프/디버프 설정
     random-effect:
       # 이로운 버프 활성화 여부
-      positive-effects: true
+      positive-effects: false
       # 해로운 디버프 활성화 여부
       negative-effects: true
     

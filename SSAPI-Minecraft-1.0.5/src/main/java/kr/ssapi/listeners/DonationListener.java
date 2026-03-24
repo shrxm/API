@@ -59,6 +59,7 @@ public class DonationListener implements Listener {
         actions.put("RANDOM_EFFECT", randomEffect);
         actions.put("SPAWN_MOB", spawnMob);
         actions.put("RANDOM_TELEPORT", randomTeleport);
+        actions.put("FIXED_TELEPORT", randomTeleport);
         actions.put("INSTANT_DEATH", instantDeath);
     }
 

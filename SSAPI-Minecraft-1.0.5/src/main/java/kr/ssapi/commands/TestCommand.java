@@ -120,6 +120,8 @@ public class TestCommand implements CommandExecutor, TabCompleter {
                 return new SpawnMobAction();
             case "RANDOM_TELEPORT":
                 return new RandomTeleportAction();
+            case "FIXED_TELEPORT":
+                return new FixedTeleportAction();
             case "INSTANT_DEATH":
                 return new InstantDeathAction();
             default:

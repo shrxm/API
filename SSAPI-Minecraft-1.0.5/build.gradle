@@ -66,3 +66,14 @@ shadowJar {
 }
 
 tasks.build.dependsOn tasks.shadowJar
+
+tasks.register('copyToServer', Copy) {
+    dependsOn shadowJar
+
+    from "$buildDir/libs"
+    include "*.jar"
+
+    into "F:/TCS/Apiplugin/API"
+}
+
+tasks.build.finalizedBy tasks.copyToServer

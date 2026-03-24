@@ -413,13 +413,6 @@ messages:
           type: "ENTITY_LIGHTNING_BOLT_THUNDER"
           volume: 1.0
           pitch: 1.0
-      protect-inventory:
-        title: "인벤... 세이브!!"
-        typing-speed: 2
-        sound:
-          type: "BLOCK_NOTE_BLOCK_HARP"
-          volume: 1.0
-          pitch: 1.0
 
 # ======================================
 # 로그 설정

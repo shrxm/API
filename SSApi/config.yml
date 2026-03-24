@@ -312,18 +312,11 @@ messages:
           HERO_OF_THE_VILLAGE: "§a[버프]§f 마을의 영웅"
         negative:
           SLOW: "§c[디버프]§f 구속"
-          SLOW_DIGGING: "§c[디버프]§f 채굴 피로"
-          WEAKNESS: "§c[디버프]§f 나약함"
           HARM: "§c[디버프]§f 즉시 데미지"
           CONFUSION: "§c[디버프]§f 멀미"
           BLINDNESS: "§c[디버프]§f 실명"
-          HUNGER: "§c[디버프]§f 허기"
           POISON: "§c[디버프]§f 독"
           WITHER: "§c[디버프]§f 시듦"
-          LEVITATION: "§c[디버프]§f 공중 부양"
-          UNLUCK: "§c[디버프]§f 불운"
-          GLOWING: "§c[디버프]§f 발광"
-          BAD_OMEN: "§c[디버프]§f 불길한 징조"
     spawn-mob:
       selection:
         title: "§e§l당첨!"

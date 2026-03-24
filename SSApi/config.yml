@@ -141,10 +141,10 @@ donation-actions:
     spawn-mob:
       # 몹 종류별 스폰 활성화 여부
       enabled:
-        passive: true    # 비공격적 몹 (소, 양, 돼지 등)
+        passive: false    # 비공격적 몹 (소, 양, 돼지 등)
         neutral: true    # 중립적 몹 (늑대, 벌, 엔더맨 등)
         hostile: true    # 공격적 몹 (좀비, 스켈레톤 등)
-        boss: true       # 보스 몹 (위더, 엔더 드래곤 등)
+        boss: false       # 보스 몹 (위더, 엔더 드래곤 등)
       
       # 난이도 설정 (1~5)
       # 1: 매우 약함 (기본의 1/3)

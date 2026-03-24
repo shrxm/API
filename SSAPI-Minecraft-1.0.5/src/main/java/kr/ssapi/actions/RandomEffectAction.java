@@ -88,15 +88,26 @@ public class RandomEffectAction implements DonationAction {
         }
     }
 
-    private void addNegativeEffects(Map<PotionEffectType, String> effectNames) {
-        Config config = Config.getInstance();
-        for (PotionEffectType type : PotionEffectType.values()) {
-            String name = config.getMessage("messages.actions.random-effect.effects.negative." + type.getName());
-            if (!name.isEmpty()) {
-                effectNames.put(type, name);
-            }
+private void addNegativeEffects(Map<PotionEffectType, String> effectNames) {
+    Config config = Config.getInstance();
+
+    String path = "messages.actions.random-effect.effects.negative";
+
+    if (!config.getConfig().contains(path)) return;
+
+    Set<String> keys = config.getConfig().getConfigurationSection(path).getKeys(false);
+
+    for (String key : keys) {
+        PotionEffectType type = PotionEffectType.getByName(key.toUpperCase());
+
+        if (type == null) {
+            continue; // 잘못된 이름 방지
         }
+
+        String name = config.getMessage(path + "." + key);
+        effectNames.put(type, name);
     }
+}
 
     private void showRandomSelectionTitle(Player player, List<?> options, Consumer<Object> onComplete) {
         selectionQueue.offer(new RandomSelectionTask(player, options, onComplete));
